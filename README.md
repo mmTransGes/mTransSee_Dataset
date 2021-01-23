@@ -32,3 +32,14 @@ Each sample's data structure is 7 * n, where n is various with frames and 7are â
 ## Sensor Configuration
 
 In this mmWave gesture dataset, we utilize the TI-IWR1443 single-chip 77-GHz to 81-GHz mmWave sensor evaluation module. The parameters are as follows:
+
+| Radar parameters | vaule |
+| ----- | ----- |
+| Rx channels | 4 |
+| Tx channels | 3 |
+| chirp cycle time | 158 Î¼s |
+| ADC sampling rate | 7.5 kHz |
+| Rx gain | 42 dB |
+| frame periodicity | 100 ms |
+| dynamic point detection | CFAR-CA |
+| point energy threshold | 1130 dB |
