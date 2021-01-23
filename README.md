@@ -1,10 +1,10 @@
 # mTransSee_Dataset
 
 This dataset contains the gesture samples used in mTransSee. 
-This work utilizes transfer learning-based method to reduce the dependence of tedious adaptation process of previous works which are sensitive to user habits and position changes of mmWave gesture sensing.
-Besides, compared to the state-of-the-art work, this dataset further extend the detection range of mmWave sensor, i.e., from 1.2m to 4.8m.
+This work utilizes a transfer learning-based method to reduce the dependence of the tedious adaptation process of previous works which are sensitive to user habits and position changes of mmWave gesture sensing.
+Besides, compared to the state-of-the-art work, this dataset further extends the detection range of the mmWave sensor, i.e., from 1.2m to 4.8m.
 
-## Sample Gathernig
+## Sample Gathering
 
 The dataset is used to explore the dependence of the following practical environment issues over previous works:
 
@@ -14,13 +14,21 @@ The dataset is used to explore the dependence of the following practical environ
 
 NEEDING A PIC
 
-We define five arm gestures to explore the impact of the above environment dependence and evaluate mTransSee. Here are the five gestures:
+We define five arm-gestures to explore the impact of the above environment dependence and evaluate mTransSee. Here are the five gestures:
 
 NEEDING A PIC
 
-We collect data from 32 persons with performing each gesture 16-20 times, in order to give mTransSee the ability to serve the gestures with different personal habits. We also set 13 discrete positions as anchor points between human-sensor distance, in order to give mTransSee the ability to serve the gestures from random positions, and collect data of repeating the same gesture samples on each same anchor but under 5 different environments, so as to make it available in pracitcal environments.
+We collect data from 32 persons with performing each gesture 16-20 times, in order to give mTransSee the ability to serve the gestures with different personal habits. We also set 13 discrete positions as anchor points between human-sensor distance, in order to give mTransSee the ability to serve the gestures from random positions, and collect data of repeating the same gesture samples on each same anchor but under 5 different environments, so as to make it available in practical environments.
+To ensure the variety of users' habits, the volunteers learn the gestures by watching how we perform.
 
 ## Directory Structure
 
 We divide the samples into two folders: "experimental_scenario_without_reflectors" and "five_scenarios_with_reflectors".
-In each folder, the samples are further separated by different volunteers each of who has a unique serial number, i.e., from 1 to 19 and from 80 to 92.
+In each folder, the samples are further separated by different volunteers each of whom has a unique serial number, i.e., from 1 to 19 and from 80 to 92.
+The samples of the same \[volunteer, human-sensor distance, gesture\] are gathered into one '.csv' file.
+In each '.csv' file, we set the lost frames as the delimiter between samples. Specifically, we asked the volunteers to hold still for about 1 second after each action, in order to generate empty frames to be used as delimiters between each action.
+Each sample's data structure is 7 * n, where n is various with frames and 7are ‘frame id’, ‘detected points in each frame’, ‘x coordinate of each point’, ‘y coordinate of each point’, ‘z coordinate of each point’, ‘velocity of each point’ and ‘reflection intensity of each point’.
+
+## Sensor Configuration
+
+In this mmWave gesture dataset, we utilize the TI-IWR1443 single-chip 77-GHz to 81-GHz mmWave sensor evaluation module. The parameters are as follows:
