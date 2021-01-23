@@ -1,8 +1,8 @@
 # mTransSee_Dataset
 
 This dataset contains the gesture samples used in mTransSee. 
-This work utilizes transfer learning based method to reduce the dependence of tedious adaptation process of previous works which are sensitive to user habits and position changes of mmWave gesture sensing.
-The dataset is collected by millimeter-wave (mmWave) FMCW radar as a benchmark for 5 gestures within 1.2 meters to 4.8 meters.
+This work utilizes transfer learning-based method to reduce the dependence of tedious adaptation process of previous works which are sensitive to user habits and position changes of mmWave gesture sensing.
+Besides, compared to the state-of-the-art work, this dataset further extend the detection range of mmWave sensor, i.e., from 1.2m to 4.8m.
 
 ## Sample Gathernig
 
@@ -12,4 +12,15 @@ The dataset is used to explore the dependence of the following practical environ
 
 **(b)** Different positions: we place 13 equally spaced anchor positions between human-sensor distance (hs-Dis) in \[1.2m, 4.8m\], i.e., separated by 0.3m and ask all of the aforementioned 32 volunteers to repeat on each anchor. More than that, positions in practical home scenarios can be adjacent to some uneven reflection subjects sometimes. Therefore, we further ask 4 of the 32 volunteers to repeat the same gesture samples on each same anchor but under different scenarios, i.e., volunteers perform gestures while adjacent to 5 kinds of reflectors: the user is tightly next to (a) several chairs, (b) a movable metal table, (c) a square metal oven with a side length of 60cm on the gesture side equal to the height of user’s shoulder, (d) a 30-inch TV set close to the user’s back, and (e) gesturing arm with the same height as the shoulder.
 
-In this dataset, we define 5 gestures for recognition to facilitate the natural human computer interactions in a real-world home scenario. Our gestures can be performed frequently and much easier than whole-body activities, especially for the senior. In addition to these predefined gestures, the dataset also archives random actions at random positions in daily life, which can be used as source domain to amplify target domain via the method of transfer learning in mTransSee. Specifically, the 5 gestures are as follows:
+NEEDING A PIC
+
+We define five arm gestures to explore the impact of the above environment dependence and evaluate mTransSee. Here are the five gestures:
+
+NEEDING A PIC
+
+We collect data from 32 persons with performing each gesture 16-20 times, in order to give mTransSee the ability to serve the gestures with different personal habits. We also set 13 discrete positions as anchor points between human-sensor distance, in order to give mTransSee the ability to serve the gestures from random positions, and collect data of repeating the same gesture samples on each same anchor but under 5 different environments, so as to make it available in pracitcal environments.
+
+## Directory Structure
+
+We divide the samples into two folders: "experimental_scenario_without_reflectors" and "five_scenarios_with_reflectors".
+In each folder, the samples are further separated by different volunteers each of who has a unique serial number, i.e., from 1 to 19 and from 80 to 92.
