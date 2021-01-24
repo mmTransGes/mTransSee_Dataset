@@ -18,6 +18,8 @@ We define five arm-gestures to explore the impact of the above environment depen
 
 ![image](https://github.com/mmTransGes/mTransSee_Dataset/blob/master/reflectors.png)
 
+<img src="https://github.com/mmTransGes/mTransSee_Dataset/blob/master/reflectors.png" width="550"  alt="reflectors"/><br/>
+
 We collect data from 32 persons with performing each gesture 16-20 times, in order to give mTransSee the ability to serve the gestures with different personal habits. We also set 13 discrete positions as anchor points between human-sensor distance, in order to give mTransSee the ability to serve the gestures from random positions, and collect data of repeating the same gesture samples on each same anchor but under 5 different environments, so as to make it available in practical environments.
 To ensure the variety of users' habits, the volunteers learn the gestures by watching how we perform.
 
