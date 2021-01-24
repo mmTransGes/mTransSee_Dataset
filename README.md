@@ -29,6 +29,8 @@ The samples of the same \[volunteer, human-sensor distance, gesture\] are gather
 In each '.csv' file, we set the lost frames as the delimiter between samples. Specifically, we asked the volunteers to hold still for about 1 second after each action, in order to generate empty frames to be used as delimiters between each action.
 Each sample's data structure is 7 * n, where n is various with frames and 7are ‘frame id’, ‘detected points in each frame’, ‘x coordinate of each point’, ‘y coordinate of each point’, ‘z coordinate of each point’, ‘velocity of each point’ and ‘reflection intensity of each point’.
 
+We provide a gesture instruction (a pdf file) in the home directory which describes how to perform each arm gesture in detail. Note that however, the volunteers learn the gestures only by watching how we perform them.
+
 ## Sensor Configuration
 
 In this mmWave gesture dataset, we utilize the TI-IWR1443 single-chip 77-GHz to 81-GHz mmWave sensor evaluation module. The parameters are as follows:
