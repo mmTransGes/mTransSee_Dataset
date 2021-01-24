@@ -12,11 +12,11 @@ The dataset is used to explore the dependence of the following practical environ
 
 **(b)** Different positions: we place 13 equally spaced anchor positions between human-sensor distance (hs-Dis) in \[1.2m, 4.8m\], i.e., separated by 0.3m and ask all of the aforementioned 32 volunteers to repeat on each anchor. More than that, positions in practical home scenarios can be adjacent to some uneven reflection subjects sometimes. Therefore, we further ask 4 of the 32 volunteers to repeat the same gesture samples on each same anchor but under different scenarios, i.e., volunteers perform gestures while adjacent to 5 kinds of reflectors: the user is tightly next to (a) several chairs, (b) a movable metal table, (c) a square metal oven with a side length of 60cm on the gesture side equal to the height of user’s shoulder, (d) a 30-inch TV set close to the user’s back, and (e) gesturing arm with the same height as the shoulder.
 
-<img src="https://github.com/mmTransGes/mTransSee_Dataset/blob/master/gesturePic.png" width="400"  alt="gesturePic"/><br/>
+<img src="https://github.com/mmTransGes/mTransSee_Dataset/blob/master/reflectors.png" width="300"  alt="reflectors"/><br/>
 
 We define five arm-gestures to explore the impact of the above environment dependence and evaluate mTransSee. Here are the five gestures:
 
-<img src="https://github.com/mmTransGes/mTransSee_Dataset/blob/master/reflectors.png" width="400"  alt="reflectors"/><br/>
+<img src="https://github.com/mmTransGes/mTransSee_Dataset/blob/master/gesturePic.png" width="400"  alt="gesturePic"/><br/>
 
 We collect data from 32 persons with performing each gesture 16-20 times, in order to give mTransSee the ability to serve the gestures with different personal habits. We also set 13 discrete positions as anchor points between human-sensor distance, in order to give mTransSee the ability to serve the gestures from random positions, and collect data of repeating the same gesture samples on each same anchor but under 5 different environments, so as to make it available in practical environments.
 To ensure the variety of users' habits, the volunteers learn the gestures by watching how we perform.
