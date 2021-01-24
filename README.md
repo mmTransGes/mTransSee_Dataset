@@ -24,7 +24,7 @@ To ensure the variety of users' habits, the volunteers learn the gestures by wat
 ## Directory Structure
 
 We divide the samples into two folders: "experimental_scenario_without_reflectors" and "five_scenarios_with_reflectors".
-In each folder, the samples are further separated by different volunteers each of whom has a unique serial number, i.e., from 1 to 19 and from 80 to 92.
+In each folder, the samples are further separated by different volunteers each of whom has a unique serial number (from 1 to 19 and from 80 to 92).
 The samples of the same \[volunteer, human-sensor distance, gesture\] are gathered into one '.csv' file.
 In each '.csv' file, we set the lost frames as the delimiter between samples. Specifically, we asked the volunteers to hold still for about 1 second after each action, in order to generate empty frames to be used as delimiters between each action.
 Each sample's data structure is 7 * n, where n is various with frames and 7are ‘frame id’, ‘detected points in each frame’, ‘x coordinate of each point’, ‘y coordinate of each point’, ‘z coordinate of each point’, ‘velocity of each point’ and ‘reflection intensity of each point’.
