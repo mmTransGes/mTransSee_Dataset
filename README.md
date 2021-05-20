@@ -1,8 +1,6 @@
 # mTransSee_Dataset
 
-This dataset contains the gesture samples used in mTransSee. 
-This work utilizes a transfer learning-based method to reduce the dependence of the tedious adaptation process of previous works which are sensitive to user habits and position changes of mmWave gesture sensing.
-Besides, compared to the state-of-the-art work, this dataset further extends the detection range of the mmWave sensor, i.e., from 1.2m to 4.8m.
+This dataset contains the gesture samples used in mTransSee. This work utilizes a transfer learning-based method to reduce the dependence of the tedious adaptation process of previous works which are sensitive to user habits and position changes of mmWave gesture sensing. Besides, compared to the state-of-the-art work, this dataset further extends the detection range of the mmWave sensor, i.e., from 1.2m to 4.8m.
 
 ## Sample Gathering
 
